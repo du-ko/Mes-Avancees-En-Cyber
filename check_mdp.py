@@ -1,6 +1,6 @@
 import getpass
 
-print("--- OUTIL D'AUDIT DE MOT DE PASSE V5 (Édition RockYou) ---")
+print("OUTIL D'AUDIT DE MOT DE PASSE V5 (Édition RockYou)")
 mdp = getpass.getpass("Entre un mot de passe à tester : ")
 
 speciaux = "!@#$%^&*?+"
@@ -21,12 +21,12 @@ except FileNotFoundError:
 
 # Affichage des résultats
 if trouve_dans_rockyou:
-    print("🚨 DANGER EXTRÊME : Ce mot de passe est dans la base piratée RockYou !")
+    print("DANGER EXTRÊME : Ce mot de passe est dans la base piratée RockYou !")
 elif len(mdp) < 8:
-    print("❌ Faille critique : Mot de passe trop court.")
+    print("Faille critique : Mot de passe trop court.")
 elif mdp.isalpha() or mdp.isnumeric():
-    print("⚠️ Attention : Il faut mélanger lettres ET chiffres.")
+    print("Attention : Il faut mélanger lettres ET chiffres.")
 elif not any(char in speciaux for char in mdp):
-    print("⚠️ Vulnérabilité : Il manque au moins un caractère spécial.")
+    print("Vulnérabilité : Il manque au moins un caractère spécial.")
 else:
     print("✅ Robuste : Ton mot de passe est solide et introuvable dans RockYou !")
