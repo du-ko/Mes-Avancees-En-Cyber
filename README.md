@@ -1,4 +1,4 @@
-# Mes Avancées En Cyber (Projet d'apprentissage)
+# Mes Avancées En Cyber (Projet d'apprentissage personnel)
 
 Ce dépôt contient mes scripts et expérimentations réseau et système, réalisés sous Xubuntu.
 
