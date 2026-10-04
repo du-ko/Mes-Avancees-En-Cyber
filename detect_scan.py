@@ -22,14 +22,14 @@ try:
     
     for ip, nb_erreurs in erreurs_par_ip.items():
         if nb_erreurs >= limite_alerte:
-            print(f"🚨 ALERTE : L'IP {ip} a généré {nb_erreurs} erreurs !")
+            print(f"ALERTE : L'IP {ip} a généré {nb_erreurs} erreurs !")
             print(f"[*] Verrouillage du pare-feu en cours...")
             
             # C'est ici que Python envoie la commande à Linux
             commande = f"ufw deny from {ip}"
             os.system(commande)
             
-            print(f"🔒 Cible neutralisée : L'IP {ip} est définitivement bloquée.")
+            print(f"Cible neutralisée : L'IP {ip} est définitivement bloquée.")
 
 except FileNotFoundError:
     print("[!] Erreur : Le fichier access.log est introuvable.")
