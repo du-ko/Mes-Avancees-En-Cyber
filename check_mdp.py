@@ -29,4 +29,4 @@ elif mdp.isalpha() or mdp.isnumeric():
 elif not any(char in speciaux for char in mdp):
     print("Vulnérabilité : Il manque au moins un caractère spécial.")
 else:
-    print("✅ Robuste : Ton mot de passe est solide et introuvable dans RockYou !")
+    print("Robuste : Ton mot de passe est solide et introuvable dans RockYou !")
