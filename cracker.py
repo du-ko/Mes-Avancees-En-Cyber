@@ -24,6 +24,6 @@ except FileNotFoundError:
     print("[!] Erreur : rockyou.txt introuvable.")
 
 if mot_de_passe_trouve:
-    print(f"\n✅ BINGO ! L'empreinte SHA-256 a été cassée. Le mot de passe est : {mot_de_passe_trouve}")
+    print(f"\nBINGO ! L'empreinte SHA-256 a été cassée. Le mot de passe est : {mot_de_passe_trouve}")
 else:
-    print("\n❌ Échec : Le mot de passe n'est pas dans le dictionnaire.")
+    print("\nÉchec : Le mot de passe n'est pas dans le dictionnaire.")
